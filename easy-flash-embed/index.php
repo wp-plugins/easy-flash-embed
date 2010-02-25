@@ -5,7 +5,7 @@ Description: Embed Flash easily and standard compliant with SWFObject using only
 Version: 1.0
 Author: Vincent Boiardt
 Author URI: http://www.boiardt.se
-Plugin URI: http://wpquicktips.wordpress.com/easy-flash-embedding
+Plugin URI: http://wpquicktips.wordpress.com/plugin-easy-flash-embed/
 */
 
 function efe_setup_globals($atts){
