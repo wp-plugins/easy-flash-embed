@@ -21,8 +21,9 @@ Additional attributes includes:
 
 * *params*
 * *flashvars*
+* *version*
 
-The attributes *params*, and *flashvars* should be written like "flashvar1=value&flashvar2=value" to function properly
+The attributes *params*, and *flashvars* should be written like "flashvar1=value&flashvar2=value" to function properly. If you want to specify a Flash version use *version* attribute. **Default is 9**.
 
 To provide alternative content for people without Flash, simply put some text between the [swf] brackets, e.g.
 
