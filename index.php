@@ -5,7 +5,7 @@ Description: Embed Flash easily and standard compliant with SWFObject using only
 Version: 1.0
 Author: Vincent Boiardt
 Author URI: http://www.boiardt.se
-Plugin URI: http://wpquicktips.wordpress.com/plugin-easy-flash-embed/
+Plugin URI: http://wpquicktips.wordpress.com/easy-flash-embedding
 */
 
 function efe_setup_globals($atts){
@@ -56,8 +56,8 @@ function efe_shortcode($atts, $content = false){
 	if(!$src || !$width || !$height)
 		return "";
 	
-	if($params) $args["params"] = wp_parse_args($params, false);
-	if($flashvars) $args["flashvars"] = wp_parse_args($flashvars, false);
+	if($params) $args["params"] = wp_parse_args(html_entity_decode($params), false);
+	if($flashvars) $args["flashvars"] = wp_parse_args(html_entity_decode($flashvars), false);
 	
 	$id = $efe->css_id . $efe->count;
 	$efe->swfs[] = (object)array_merge($args, array(
